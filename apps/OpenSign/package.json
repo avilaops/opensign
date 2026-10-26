@@ -3,7 +3,7 @@
   "version": "2.37.0",
   "private": true,
   "dependencies": {
-    "@eid-easy/eideasy-widget": "^3.17.3",
+    "@eid-easy/eideasy-widget": "^3.20.1",
     "@emotion/react": "^11.14.0",
     "@emotion/styled": "^11.14.1",
     "@formkit/auto-animate": "^0.9.0",

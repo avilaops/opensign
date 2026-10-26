@@ -51,7 +51,7 @@
     "pdf-lib": "^1.17.1",
     "posthog-node": "^5.21.2",
     "qrcode": "^1.5.4",
-    "rate-limiter-flexible": "^9.1.1",
+    "rate-limiter-flexible": "^11.2.3",
     "sharp": "^0.35.3",
     "speakeasy": "^2.0.0",
     "ws": "^8.21.0"

@@ -17,12 +17,7 @@ export default function SamplesDrawer() {
     >
       <Stack
         spacing={3}
-        py={1}
-        px={2}
-        width={SAMPLES_DRAWER_WIDTH}
-        justifyContent="space-between"
-        height="100%"
-      >
+       sx={{ py: 1, px: 2, width: SAMPLES_DRAWER_WIDTH, justifyContent: "space-between", height: "100%" }}>
         <Stack
           spacing={2}
           sx={{
@@ -36,7 +31,7 @@ export default function SamplesDrawer() {
             EmailBuilder
           </Typography>
 
-          <Stack alignItems="flex-start">
+          <Stack sx={{ alignItems: "flex-start" }}>
             <SidebarButton href="#">Empty</SidebarButton>
             <SidebarButton href="#sample/requestemail">
               Request Email

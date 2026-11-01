@@ -43,7 +43,7 @@ export default function InspectorDrawer() {
           borderColor: "divider"
         }}
       >
-        <Box px={2}>
+        <Box sx={{ px: 2 }}>
           <Tabs
             value={selectedSidebarTab}
             onChange={(_, v) => setSidebarTab(v)}

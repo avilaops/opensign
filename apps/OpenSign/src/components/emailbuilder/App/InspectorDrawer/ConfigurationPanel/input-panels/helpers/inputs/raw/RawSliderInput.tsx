@@ -25,11 +25,8 @@ export default function RawSliderInput({
   return (
     <Stack
       direction="row"
-      alignItems="center"
       spacing={2}
-      justifyContent="space-between"
-      width="100%"
-    >
+     sx={{ alignItems: "center", justifyContent: "space-between", width: "100%" }}>
       <Box sx={{ minWidth: 24, lineHeight: 1, flexShrink: 0 }}>{iconLabel}</Box>
       <Slider
         {...props}
@@ -46,8 +43,7 @@ export default function RawSliderInput({
       <Box sx={{ minWidth: 32, textAlign: "right", flexShrink: 0 }}>
         <Typography
           variant="body2"
-          color="text.secondary"
-          sx={{ lineHeight: 1 }}
+          sx={{ color: "text.secondary", lineHeight: 1 }}
         >
           {value}
           {units}

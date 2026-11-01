@@ -89,14 +89,12 @@ const THEME = createTheme(BASE_THEME, {
     MuiAlert: {
       styleOverrides: {
         root: {
-          fontSize: BASE_THEME.typography.pxToRem(14)
+          fontSize: BASE_THEME.typography.pxToRem(14),
+          "&.MuiAlert-filled.MuiAlert-colorSuccess": { backgroundColor: BRAND_GREEN }
         },
         action: {
           paddingTop: 0,
           marginRight: 0
-        },
-        filledSuccess: {
-          backgroundColor: BRAND_GREEN
         }
       }
     },
@@ -175,21 +173,23 @@ const THEME = createTheme(BASE_THEME, {
     MuiChip: {
       styleOverrides: {
         root: {
-          "&.MuiChip-filledError, &.MuiChip-filledSuccess": {
+          "&.MuiChip-filled.MuiChip-colorError, &.MuiChip-filled.MuiChip-colorSuccess": {
             fill: BASE_THEME.palette.primary.contrastText
+          },
+          "&.MuiChip-colorSecondary": {
+            borderColor: BASE_THEME.palette.grey[400],
+            color: BASE_THEME.palette.text.secondary
           }
         },
         sizeSmall: {
           borderRadius: BASE_THEME.spacing(0.5),
           fontSize: 12
         },
-        iconSmall: {
-          fontSize: 14,
-          marginLeft: BASE_THEME.spacing(1)
-        },
-        colorSecondary: {
-          borderColor: BASE_THEME.palette.grey[400],
-          color: BASE_THEME.palette.text.secondary
+        icon: {
+          variants: [{ props: { size: "small" }, style: {
+            fontSize: 14,
+            marginLeft: BASE_THEME.spacing(1)
+          } }]
         },
         label: {
           fontWeight: BASE_THEME.typography.fontWeightMedium
@@ -198,8 +198,8 @@ const THEME = createTheme(BASE_THEME, {
     },
     MuiDrawer: {
       defaultProps: {
-        PaperProps: {
-          elevation: 2
+        slotProps: {
+          paper: { elevation: 2 }
         }
       }
     },
@@ -256,7 +256,7 @@ const THEME = createTheme(BASE_THEME, {
       },
       styleOverrides: {
         root: {
-          "&.MuiButton-containedSecondary.Mui-disabled": {
+          "&.MuiButton-contained.MuiButton-colorSecondary.Mui-disabled": {
             backgroundColor: BASE_THEME.palette.grey[100]
           }
         }
@@ -269,11 +269,9 @@ const THEME = createTheme(BASE_THEME, {
     },
     MuiIconButton: {
       styleOverrides: {
-        edgeStart: {
-          marginLeft: BASE_THEME.spacing(-1)
-        },
-        colorSecondary: {
-          color: BASE_THEME.palette.grey[500]
+        root: {
+          "&.MuiIconButton-edgeStart": { marginLeft: BASE_THEME.spacing(-1) },
+          "&.MuiIconButton-colorSecondary": { color: BASE_THEME.palette.grey[500] }
         }
       }
     },
@@ -282,13 +280,14 @@ const THEME = createTheme(BASE_THEME, {
         disableElevation: true
       },
       styleOverrides: {
-        textPrimary: {
+        root: {
+        "&.MuiButton-text.MuiButton-colorPrimary": {
           color: BASE_THEME.palette.text.primary
         },
-        textSecondary: {
+        "&.MuiButton-text.MuiButton-colorSecondary": {
           color: BASE_THEME.palette.text.secondary
         },
-        outlinedPrimary: {
+        "&.MuiButton-outlined.MuiButton-colorPrimary": {
           borderColor: BASE_THEME.palette.grey[300],
           color: BASE_THEME.palette.text.primary,
           "&:hover, &:active, &:focus": {
@@ -296,7 +295,7 @@ const THEME = createTheme(BASE_THEME, {
             color: BASE_THEME.palette.text.primary
           }
         },
-        containedSecondary: {
+        "&.MuiButton-contained.MuiButton-colorSecondary": {
           backgroundColor: BASE_THEME.palette.common.white,
           border: `1px solid ${BASE_THEME.palette.grey[300]}`,
           color: BASE_THEME.palette.text.primary,
@@ -305,6 +304,7 @@ const THEME = createTheme(BASE_THEME, {
             borderColor: BASE_THEME.palette.grey[500],
             color: BASE_THEME.palette.text.primary
           }
+        }
         }
       }
     },
@@ -350,8 +350,7 @@ const THEME = createTheme(BASE_THEME, {
             WebkitTextFillColor: "inherit",
             color: BASE_THEME.palette.text.secondary
           }
-        },
-        inputSizeSmall: {}
+        }
       }
     },
     MuiOutlinedInput: {

@@ -3,14 +3,14 @@
   "version": "2.37.0",
   "private": true,
   "dependencies": {
-    "@eid-easy/eideasy-widget": "^3.17.3",
+    "@eid-easy/eideasy-widget": "^3.20.1",
     "@emotion/react": "^11.14.0",
     "@emotion/styled": "^11.14.1",
     "@formkit/auto-animate": "^0.9.0",
     "@imgly/background-removal": "^1.7.0",
     "@lottiefiles/dotlottie-react": "^0.19.0",
-    "@mui/icons-material": "^5.15.10",
-    "@mui/material": "^5.15.10",
+    "@mui/icons-material": "^9.5.0",
+    "@mui/material": "^9.5.0",
     "@pdf-lib/fontkit": "^1.1.1",
     "@radix-ui/themes": "^3.3.0",
     "@reactour/tour": "^3.8.0",
@@ -32,7 +32,7 @@
     "dompurify": "^3.4.1",
     "file-saver": "^2.0.5",
     "highlight.js": "^11.11.1",
-    "i18next": "^26.0.8",
+    "i18next": "^26.5.6",
     "i18next-browser-languagedetector": "^8.2.1",
     "i18next-http-backend": "^3.0.6",
     "jszip": "^3.10.1",
@@ -60,7 +60,7 @@
     "react-gtm-module": "^2.0.11",
     "react-i18next": "^17.0.6",
     "react-konva": "^19.2.3",
-    "react-pdf": "^10.4.1",
+    "react-pdf": "^11.0.0",
     "react-quill-new": "^3.8.3",
     "react-redux": "^9.2.0",
     "react-rnd": "^10.5.3",
@@ -115,9 +115,9 @@
     }
   },
   "devDependencies": {
-    "@babel/core": "^7.29.0",
-    "@babel/preset-env": "^7.29.2",
-    "@babel/preset-react": "^7.28.5",
+    "@babel/core": "^8.0.7",
+    "@babel/preset-env": "^8.0.7",
+    "@babel/preset-react": "^8.0.1",
     "@babel/runtime-corejs2": "^7.29.2",
     "@playwright/test": "^1.64.1",
     "@testing-library/jest-dom": "^6.9.1",
@@ -127,7 +127,7 @@
     "@vitejs/plugin-react": "^6.0.1",
     "@vitest/ui": "^4.1.5",
     "autoprefixer": "^10.5.0",
-    "babel-loader": "^9.2.1",
+    "babel-loader": "^10.1.1",
     "commitizen": "^4.3.1",
     "concurrently": "^10.0.4",
     "css-loader": "^7.1.4",
@@ -161,6 +161,6 @@
     "protobufjs": ">=7.6.5"
   },
   "engines": {
-    "node": "18 || 20 || 22"
+    "node": ">=22.18.0 <23"
   }
 }

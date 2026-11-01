@@ -35,8 +35,7 @@ export default function Swatch({ paletteColors, value, onChange }: Props) {
   };
   return (
     <Box
-      width="100%"
-      sx={{
+      sx={{ width: "100%",
         display: "grid",
         gap: 1,
         gridTemplateColumns: "1fr 1fr 1fr 1fr 1fr 1fr"

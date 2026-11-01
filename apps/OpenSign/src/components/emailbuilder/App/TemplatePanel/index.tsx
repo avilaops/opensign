@@ -90,7 +90,7 @@ export default function TemplatePanel() {
   return (
     <>
       <Stack
-        sx={{
+        sx={{ justifyContent: "space-between", alignItems: "center",
           height: 49,
           borderBottom: 1,
           borderColor: "divider",
@@ -101,18 +101,12 @@ export default function TemplatePanel() {
           px: 1
         }}
         direction="row"
-        justifyContent="space-between"
-        alignItems="center"
       >
         <ToggleSamplesPanelButton />
         <Stack
-          px={2}
+          data-testid="email-editor-toolbar"
           direction="row"
-          gap={2}
-          width="100%"
-          justifyContent="space-between"
-          alignItems="center"
-        >
+         sx={{ px: 2, gap: 2, width: "100%", justifyContent: "space-between", alignItems: "center" }}>
           <Stack direction="row" spacing={2}>
             <MainTabsGroup />
           </Stack>

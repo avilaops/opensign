@@ -23,7 +23,7 @@ export default function TextDimensionInput({ label, defaultValue, onChange }: Te
       size="small"
       slotProps={{ input: {
         endAdornment: (
-          <Typography variant="body2" color="text.secondary">
+          <Typography variant="body2" sx={{ color: "text.secondary" }}>
             px
           </Typography>
         ),

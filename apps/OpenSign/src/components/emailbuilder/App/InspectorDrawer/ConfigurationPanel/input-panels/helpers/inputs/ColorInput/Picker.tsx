@@ -90,7 +90,7 @@ export default function Picker({ value, onChange }: Props) {
         value={value}
         onChange={handleChange}
       />
-      <Box pt={1}>
+      <Box sx={{ pt: 1 }}>
         <HexColorInput prefixed color={internalValue} onChange={handleChange} />
       </Box>
     </Stack>

@@ -11,15 +11,14 @@ export default function BaseSidebarPanel({
   children
 }: SidebarPanelProps) {
   return (
-    <Box p={2}>
+    <Box sx={{ p: 2 }}>
       <Typography
         variant="overline"
-        color="text.secondary"
-        sx={{ display: "block", mb: 2 }}
+        sx={{ color: "text.secondary", display: "block", mb: 2 }}
       >
         {title}
       </Typography>
-      <Stack spacing={5} mb={3}>
+      <Stack spacing={5} sx={{ mb: 3 }}>
         {children}
       </Stack>
     </Box>

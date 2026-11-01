@@ -21,13 +21,13 @@ export default function TextDimensionInput({ label, defaultValue, onChange }: Te
       variant="standard"
       placeholder="auto"
       size="small"
-      InputProps={{
+      slotProps={{ input: {
         endAdornment: (
           <Typography variant="body2" color="text.secondary">
             px
           </Typography>
         ),
-      }}
+      } }}
     />
   );
 }
